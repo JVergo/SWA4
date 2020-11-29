@@ -1,3 +1,7 @@
+/*This index.js file is no longer use for Course Assignment 4 Part 1.
+index.html contains the answer to Part 1
+*/
+
 // const unsubscribeButton = document.querySelector('button')
 const textField = document.querySelector('input')
 const date = document.getElementById("date")
