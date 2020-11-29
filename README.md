@@ -1,8 +1,8 @@
-#Course Assignment 4
-##Part 1 Folder
+# Course Assignment 4
+## Part 1 Folder
 rxjsproj
 
-##Part 2 Folders
+## Part 2 Folders
 Flux
 Server
 WeatherData Angular
