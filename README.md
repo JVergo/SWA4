@@ -1,6 +1,7 @@
 # Course Assignment 4
 ## Part 1 Folder
-rxjsproj
+rxjsproj </br>
+Server
 
 ## Part 2 Folders
 Flux </br>

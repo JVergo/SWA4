@@ -34,7 +34,7 @@
             return true;
         }
 
-        //writing displaying data in console and html
+        //writing displaying data in console and html, pretty print in console only
         const write = response => {
             if (response) {
                 // ul.innerHTML = "";
@@ -42,7 +42,7 @@
                 response.warnings.forEach(warning => {
                     if (isANewID(warning.id) && warning.severity >= textField.value) {
                         accumulatedWarningsArray.push(warning)
-                        console.log(`RESPONSE IS Id: ${JSON.stringify(warning)}`)
+                        console.log(`RESPONSE IS Id: ${JSON.stringify(warning, null, 3)}`)
                         addBullet(JSON.stringify(warning))
                     }
                 });
