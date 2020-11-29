@@ -3,8 +3,8 @@
 rxjsproj
 
 ## Part 2 Folders
-Flux
-Server
+Flux </br>
+Server </br>
 WeatherData Angular
 
 ## !Important!
