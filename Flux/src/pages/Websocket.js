@@ -11,7 +11,7 @@ function Websocket() {
         if (WarringStore.getFilteredWarring().length === 0) {
             subscribeToWarrings();
         }
-        return () => WarringStore.removeChangeListener(onChange);
+        return () => WarringStore.removeChangeListener(onChange); //doesn't unsub immediately, the possibility to on page change
     }, []);
 
     function onChange() {

@@ -79,7 +79,7 @@
         ////////////////////////////////////////////////////////////////////////////////////////////
         var mainStream = of({}).pipe(
             mergeMap(_ => httpRequest()
-                .pipe(catchError(e => { console.error(e); return of(false) }))),
+                .pipe(catchError(e => { console.error(e); return of(false) }))), //specifically returns false if the error happens
             // tap(write),             // tap - Transparently perform actions or side-effects, such as logging
             tap(_ => console.info('---waiting 3 secs to restart polling')),
             delay(3000),
@@ -100,7 +100,7 @@
                 flatMap(() => mainStream
                     .pipe(takeUntil(toggleStream))))
 
-        resultStream.subscribe(x => write(x));
+        resultStream.subscribe(x => write(x)); //update the view while the toggle was on
 
         window.load = () => {
         }
